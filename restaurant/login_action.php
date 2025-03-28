@@ -1,5 +1,9 @@
 <?php
-session_start();
+// Vérifier si la session est déjà active avant toute chose
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 include('db.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

@@ -1,0 +1,180 @@
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+    --first-color: #FE6D73;
+    --first-color-alt: #D64045;
+    --title-color: #F7F7F7;
+    --text-color: #e0e0e0;
+    --text-color-light: #aaaaaa;
+    --body-color: #1D1D1D;
+    --container-color: #2D2D2D;
+    --border-color: #3D3D3D;
+    --input-bg: #333333;
+    --input-border: #4a4a4a;
+    --hover-color: #4f94cb;
+    --footer-bg: #1a1a1a;
+    --footer-border: #2a2a2a;
+    background: linear-gradient(135deg, var(--body-color), var(--container-color));
+}
+
+/* Styles généraux pour le thème sombre */
+body.dark-theme .home__title,
+body.dark-theme .home__subtitle,
+body.dark-theme .section-title,
+body.dark-theme .section-subtitle,
+body.dark-theme .nav__logo,
+body.dark-theme .nav__link,
+body.dark-theme .button {
+    color: var(--title-color);
+}
+
+body.dark-theme .nav__menu {
+    background-color: var(--body-color);
+}
+
+/* Menu styles */
+body.dark-theme .menu__content {
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-theme .menu__name,
+body.dark-theme .menu__preci,
+body.dark-theme .menu__detail {
+    color: var(--title-color);
+}
+
+/* Services styles */
+body.dark-theme .services__content {
+    background-color: var(--container-color);
+}
+
+body.dark-theme .services__title {
+    color: var(--title-color);
+}
+
+/* Footer styles */
+body.dark-theme .footer {
+    background-color: #121212;
+}
+
+body.dark-theme .footer::before {
+    background: linear-gradient(90deg, var(--first-color) 0%, #ff6b6b 50%, #4ecdc4 100%);
+}
+
+body.dark-theme .footer__title {
+    color: #ffffff;
+}
+
+body.dark-theme .footer__title::after {
+    background-color: var(--first-color);
+}
+
+body.dark-theme .footer__logo {
+    color: #ffffff;
+}
+
+body.dark-theme .footer__description {
+    color: #a0a0a0;
+}
+
+body.dark-theme .footer__social {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+body.dark-theme .footer__social:hover {
+    background-color: var(--first-color);
+}
+
+body.dark-theme .footer__link {
+    color: #a0a0a0;
+}
+
+body.dark-theme .footer__link:hover {
+    color: var(--first-color);
+}
+
+body.dark-theme .footer ul li {
+    color: #a0a0a0;
+}
+
+body.dark-theme .footer ul li:before {
+    color: var(--first-color);
+}
+
+body.dark-theme .footer__copy {
+    color: #a0a0a0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .scrolltop {
+    background-color: var(--first-color);
+}
+
+/* Login et Signup pages */
+body.dark-theme .form-container {
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme input[type="text"],
+body.dark-theme input[type="email"],
+body.dark-theme input[type="password"] {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-color);
+}
+
+body.dark-theme input[type="text"]:focus,
+body.dark-theme input[type="email"]:focus,
+body.dark-theme input[type="password"]:focus {
+    border-color: var(--hover-color);
+}
+
+body.dark-theme .error-message {
+    background-color: rgba(228, 77, 77, 0.15);
+    border-color: rgba(228, 77, 77, 0.3);
+}
+
+/* Account page */
+body.dark-theme .account-container {
+    background-color: var(--container-color);
+}
+
+body.dark-theme .account-info {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .info-item {
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-theme .info-label {
+    color: var(--text-color-light);
+}
+
+body.dark-theme .info-value,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p {
+    color: var(--text-color);
+}
+
+body.dark-theme .no-orders {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-color-light);
+}
+
+/* Bouton de thème */
+.change-theme {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+} 

@@ -1,8 +1,9 @@
-
-
-
 <?php
-session_start();
+// Vérifier si la session est déjà active avant toute chose
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 $error_message = '';  // Variable pour afficher le message d'erreur
 if (isset($_GET['error'])) {
     $error_message = $_GET['error'];  // Récupère l'erreur envoyée dans l'URL
@@ -15,7 +16,9 @@ if (isset($_GET['error'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se connecter</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark-theme.css">
 </head>
 <body>
     <div class="container">
@@ -35,8 +38,9 @@ if (isset($_GET['error'])) {
             </form>
             <p>Pas de compte ? <a href="signup.php">S'inscrire</a></p>
             <p>Ou <a href="index.php" class="skip-link">continuer sans se connecter</a></p>
-
         </div>
     </div>
+    <script src="./js/theme.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

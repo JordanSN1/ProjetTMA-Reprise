@@ -13,7 +13,7 @@ include("header.php")
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <!--========== CSS ==========-->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./styles/styles.css">
 
         <title>Responsive website food</title>
     </head>
@@ -40,7 +40,7 @@ include("header.php")
                         <a href="reservation.php" class="button">reservation</a>
                     </div>
     
-                    <img src="plat1.png" alt="" class="home__img">
+                    <img src="./images/plat1.png" alt="" class="home__img">
                 </div>
             </section>
             
@@ -55,7 +55,7 @@ include("header.php")
 
                     </div>
 
-                    <img src="about.jpg" alt="" class="about__img">
+                    <img src="./images/about.jpg" alt="" class="about__img">
                 </div>
             </section>
 
@@ -354,7 +354,7 @@ include("header.php")
 
                 <div class="menu__container bd-grid">
                     <div class="menu__content">
-                        <img src="platTUN.png" alt="" class="menu__img">
+                        <img src="./images/platTUN.png" alt="" class="menu__img">
                         <h3 class="menu__name">Fricassé</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$5.00</span>
@@ -362,7 +362,7 @@ include("header.php")
                     </div>
 
                     <div class="menu__content">
-                        <img src="DessertTUN.png" alt="" class="menu__img">
+                        <img src="./images/DessertTUN.png" alt="" class="menu__img">
                         <h3 class="menu__name">Mille feuilles</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$3.00</span>
@@ -370,7 +370,7 @@ include("header.php")
                     </div>
                     
                     <div class="menu__content">
-                        <img src="PlatTUN1.jpg" alt="" class="menu__img">
+                        <img src="./images/PlatTUN1.jpg" alt="" class="menu__img">
                         <h3 class="menu__name">Ojja</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$9.50</span>
@@ -385,7 +385,7 @@ include("header.php")
 
                 <div class="menu__container bd-grid">
                     <div class="menu__content">
-                        <img src="platALG.png" alt="" class="menu__img">
+                        <img src="./images/platALG.png" alt="" class="menu__img">
                         <h3 class="menu__name">Plat1</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$$</span>
@@ -393,7 +393,7 @@ include("header.php")
                     </div>
 
                     <div class="menu__content">
-                        <img src="PlatALG2.png" alt="" class="menu__img">
+                        <img src="./images/PlatALG2.png" alt="" class="menu__img">
                         <h3 class="menu__name">Plat2</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$$</span>
@@ -401,7 +401,7 @@ include("header.php")
                     </div>
                     
                     <div class="menu__content">
-                        <img src="DessertALG.png" alt="" class="menu__img">
+                        <img src="./images/DessertALG.png" alt="" class="menu__img">
                         <h3 class="menu__name">Plat3</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$$</span>
@@ -417,7 +417,7 @@ include("header.php")
 
                 <div class="menu__container bd-grid">
                     <div class="menu__content">
-                        <img src="PlatMAR.png" alt="" class="menu__img">
+                        <img src="./images/PlatMAR.png" alt="" class="menu__img">
                         <h3 class="menu__name">Plat1</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$$</span>
@@ -425,7 +425,7 @@ include("header.php")
                     </div>
 
                     <div class="menu__content">
-                        <img src="PlatMAR1.png" alt="" class="menu__img">
+                        <img src="./images/PlatMAR1.png" alt="" class="menu__img">
                         <h3 class="menu__name">Plat2</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$$</span>
@@ -433,7 +433,7 @@ include("header.php")
                     </div>
                     
                     <div class="menu__content">
-                        <img src="DessertMAR.png" alt="" class="menu__img">
+                        <img src="./images/DessertMAR.png" alt="" class="menu__img">
                         <h3 class="menu__name">Plat3</h3>
                         <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$$</span>
@@ -451,12 +451,12 @@ include("header.php")
 <p class="app__description">Découvrez notre application et téléchargez-la. Vous pourrez effectuer des réservations, commander des plats, suivre vos livraisons en cours et bien plus encore.</p>
 <div class="app__stores">
 
-                            <a href="#"><img src="app1.png" alt="" class="app__store"></a>
-                            <a href="#"><img src="app2.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="./images/app1.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="./images/app2.png" alt="" class="app__store"></a>
                         </div>
                     </div>
 
-                    <img src="app-mobile.png" alt="" class="app__img">
+                    <img src="./images/app-mobile.png" alt="" class="app__img">
                 </div>
             </section>
 

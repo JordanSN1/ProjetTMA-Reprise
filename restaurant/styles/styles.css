@@ -264,6 +264,9 @@ img{
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     z-index: var(--z-fixed);
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .nav__list {
@@ -287,6 +290,9 @@ img{
 
   .show-menu {
     top: var(--header-height);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav__item {
@@ -321,6 +327,15 @@ img{
   /* Fix pour éviter le déplacement du contenu quand le menu s'ouvre */
   body.menu-open {
     overflow: hidden;
+  }
+  
+  /* Fix pour empêcher le menu de réapparaître sur scroll */
+  body:not(.menu-open) .nav__menu {
+    transform: translateY(-100%);
+  }
+  
+  body.menu-open .nav__menu {
+    transform: translateY(0);
   }
 }
 
@@ -715,7 +730,6 @@ img{
     color: #b0b0b0;
     line-height: 2;
     margin-bottom: 0.5rem;
-    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }

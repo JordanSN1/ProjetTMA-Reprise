@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.querySelectorAll('.nav__link');
+    const header = document.getElementById('header');
     
     // Fonction pour afficher/masquer le menu
     if (navToggle) {
@@ -12,11 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.toggle('show-menu');
             
             // Ajoute ou supprime la classe menu-open sur le body
-            if (navMenu.classList.contains('show-menu')) {
-                document.body.classList.add('menu-open');
-            } else {
-                document.body.classList.remove('menu-open');
-            }
+            document.body.classList.toggle('menu-open');
         });
     }
     
@@ -127,10 +124,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /*==================== CHANGE BACKGROUND HEADER ====================*/
     function scrollHeader() {
-        const header = document.getElementById('header');
+        const scrollY = window.pageYOffset;
+        
         // Quand le scroll est supérieur à 100px de hauteur, ajoute la classe scroll-header
-        if (this.scrollY >= 100) header.classList.add('scroll-header');
-        else header.classList.remove('scroll-header');
+        if (scrollY >= 100) {
+            header.classList.add('scroll-header');
+        } else {
+            header.classList.remove('scroll-header');
+        }
     }
     
     window.addEventListener('scroll', scrollHeader);
